@@ -1,67 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8">
-    <title>Evan Blair Art</title>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
     <link href="css/lightbox.css" rel="stylesheet"/>
 </head>
-<body>
 <div>
     <h1>Evan Blair Art</h1>
 </div>
 <div id="navigation">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Gallery.html">Gallery</a>
-        <ul>
-            <li><a href="Sketches.html">Sketches</a></li>
-            <li><a href="Painting.html">Paintings</a></li>
-            <li><a href="Maps.html">Maps</a></li>
-        </ul>
-    </li>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://merch.evanblairart.com/">Merch</a></li>
+
+    </ul>
 </div>
-
-<li><a href="/about">About</a></li>
-<li><a href="https://merch.evanblairart.com/">Merch</a></li>
-
-</div>
-
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-<div id="twitch" class="hide">
-</div>
-
-<script type="text/javascript">
-    var options = {
-        channel: "EvanBlairArt", // TODO: Change this to the streams username you want to embed
-        width: 800,
-        height: 520,
-    };
-    var player = new Twitch.Player("twitch", options);
-
-    player.addEventListener(Twitch.Player.READY, initiate)
-
-    function initiate() {
-        player.addEventListener(Twitch.Player.ONLINE, handleOnline);
-        player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
-        player.removeEventListener(Twitch.Player.READY, initiate);
-    }
-
-    function handleOnline() {
-        document.getElementById("twitch").classList.remove('hide');
-        player.removeEventListener(Twitch.Player.ONLINE, handleOnline);
-        player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
-        player.setMuted(false);
-    }
-
-    function handleOffline() {
-        document.getElementById("twitch").classList.add('hide');
-        player.removeEventListener(Twitch.Player.OFFLINE, handleOffline);
-        player.addEventListener(Twitch.Player.ONLINE, handleOnline);
-        player.setMuted(true);
-    }
-</script>
-
+<body>
 <div id="portfolio">
     <div id="portfolio-characters">
         <a href="images/amelia-hearthwood.jpg" data-lightbox="portfolio" data-title="Amelia Hearthwood">
@@ -109,5 +67,6 @@
 
 </div>
 <script src="js/lightbox-plus-jquery.js"></script>
+
 </body>
 </html>
