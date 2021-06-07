@@ -4,48 +4,38 @@ body {
     font-family: Helvetica;
     text-align: center;
 }
-
 a {
     text-decoration: none;
 }
-
+/*Navigation bar*/
 .navigation {
     display: inline-block;
     background-color: #1f2023;
     font-family: Helvetica;
+    font-size: larger;
 }
-
-
 .navigation:after {
     content: '';
     clear: both;
     display: block;
 }
-
 .navigation ul {
     margin: 0;
     list-style: none;
-
 }
-
 .navigation > ul > li {
     float: left;
     position: relative;
-
 }
-
 .navigation ul li a {
     text-decoration: none;
     color: #d3d3d3;
-    padding: 10px 15px;
+    padding: 15px 40px;
     display: block;
-
 }
-
 .navigation ul li:hover a{
     background: #44aaee;
 }
-
 .navigation ul ul{
     position: absolute;
     padding: 0;
@@ -53,44 +43,33 @@ a {
     display: none;
     top: 100%;
     left: 0;
-
 }
-
 .navigation ul li:hover>ul{
     display: block;
 }
-
 .navigation ul ul li:hover a{
     background: #999999;
 }
-
-
-
+/*Images*/
 #portfolio img {
     max-width: 300px;
     max-height: 300px;
     padding: 4px;
-
 }
-
 #portfolio {
     max-width: 950px;
     min-width: 900px;
     margin: auto;
-
-
 }
-
-
 #portfolio{
     margin: auto;
     width: 40%;
     padding: 5px;
 }
-
-.hide { display:none; }
-
-/* Optional: The following css just makes sure the twitch video stays responsive */
+/*Twitch*/
+.hide {
+    display:none;
+}
 #twitch {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
