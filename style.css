@@ -1,5 +1,5 @@
 body {
-    background-color: #696969;
+    background-color: #1f2023;
     color: #d3d3d3;
     font-family: Helvetica;
     text-align: center;
@@ -10,7 +10,8 @@ a {
 }
 
 .navigation {
-    background-color: #696969;
+    display: inline-block;
+    background-color: #1f2023;
     font-family: Helvetica;
 }
 
@@ -41,6 +42,30 @@ a {
 
 }
 
+.navigation ul li:hover a{
+    background: #44aaee;
+}
+
+.navigation ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 100px;
+    display: none;
+    top: 100%;
+    left: 0;
+
+}
+
+.navigation ul li:hover>ul{
+    display: block;
+}
+
+.navigation ul ul li:hover a{
+    background: #999999;
+}
+
+
+
 #portfolio img {
     max-width: 300px;
     max-height: 300px;
@@ -57,9 +82,9 @@ a {
 }
 
 
-/*#portfolio{
+#portfolio{
     margin: auto;
     width: 40%;
     padding: 5px;
-}*/
+}
 
