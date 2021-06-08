@@ -6,24 +6,12 @@
     text-decoration: none;
     border-radius: 50%;
 }
-.social-bar {
-    width: 100%; /* Full-width */
-    background-color: #555; /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
-}
 
-.social-bar a {
-    float: right; /* Float links side by side */
-    text-align: right; /* Center-align text */
-    width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
-    padding: 5px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 10px; /* Increased font size */
-}
-
-.social-bar a:hover {
-    background-color: #000; /* Add a hover color */
+.social-bar img{
+    float: right;
+    max-width: 25px;
+    max-height: 25px;
+    padding: 3px;
 }
 
 .active {
